@@ -1,0 +1,19 @@
+{
+    "name": "Faerie Fire",
+    "stats": [
+        "+ 2 Damage"
+    ],
+    "use": {
+        "name": "Imbue",
+        "description": " Instantly restores 85 health."
+    },
+    "cooldown": 5.0,
+    "lore": "The ethereal flames from the ever-burning ruins of Kindertree ignite across realities.",
+    "used-by": [
+        {
+            "name": "Zeus",
+            "matches": 1,
+            "wins": 1
+        }
+    ]
+}

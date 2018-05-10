@@ -6,6 +6,9 @@ import json
 import shutil
 import time
 import scrapper
+import sys
+import display
+import traceback
 
 url_root = "https://www.dotabuff.com/"
 url_dota_heroes = "https://www.dotabuff.com/heroes"
@@ -13,7 +16,11 @@ url_dota_items = "https://www.dotabuff.com/items"
 
 url_scrape_state = "state.json"
 
-url_data_dir = "../data/"
+path = sys.argv[0].split("/")
+path.pop()
+path.pop()
+path.append("data")
+url_data_dir = "/".join(path)
 
 url_raw_dir = os.path.join(url_data_dir, "raw/")
 url_raw_heroes = os.path.join(url_raw_dir, "heroes.html")
@@ -26,6 +33,8 @@ url_scrapped_heroes = os.path.join(url_scrapped_dir, "heroes.json")
 url_scrapped_heroes_dir = os.path.join(url_scrapped_dir, "heroes/")
 url_scrapped_items = os.path.join(url_scrapped_dir, "items.json")
 url_scrapped_items_dir = os.path.join(url_scrapped_dir, "items/")
+
+title = "Dota 2 Data Scraper"
 
 DEFAULT_STATE = {
     "state":-1,
@@ -56,6 +65,7 @@ def save_state():
 
 if os.path.exists(url_scrape_state):
     load_state()
+    log("Continuing previous session")
 else:
     save_state()
 
@@ -74,13 +84,18 @@ def move_state(target):
 running = True
 
 if state["state"] == -2:
-    state = dict(DEFAULT_STATE)
-    save_state()
+    print("Previous session finished, restart ? (y)")
+    y = input()
+    if y.lower() == "y":
+        state = dict(DEFAULT_STATE)
+        save_state()
+    else:
+        sys.exit(0)
 
 max_tries = 3
 tries = 0
 
-default_delay = 0.5
+default_delay = 0.2
 to_delay = 0
 
 while running:
@@ -91,7 +106,7 @@ while running:
     try:
         if state["state"] == -1:
             if state["status"] == 0:
-                log("Start scraping")
+                display.show([title, "Initializing"])
                 # Clean data
                 if os.path.isdir(url_data_dir):
                     log("Cleaning previous scrap data")
@@ -120,25 +135,12 @@ while running:
         elif state["state"] == 0:
             # Scrape Heroes
             if state["status"] == 0:
+                display.show([title, "Scrapping heroes url list"])
                 log("Scrapping heroes hyperlink from {}".format(url_dota_heroes))
                 if save_url(url_dota_heroes, url_raw_heroes):
                     with open(url_raw_heroes, 'r') as f:
                         html = f.read()
-                        soup = BeautifulSoup(html, "html.parser")
-                        heroes = soup.find("div", {"class":"hero-grid"})
-                        children = heroes.findChildren("a")
-                        links = []
-                        for child in children:
-                            link = urljoin(url_dota_heroes, child['href'])
-                            name = child.find("div", {"class":"name"}).text
-                            l = child['href'].split("/")
-                            h_id = l.pop()
-                            hero = {
-                                "id": h_id,
-                                "name": name,
-                                "url": link
-                            }
-                            links.append(hero)
+                        links = scrapper.scrap_hero_links(html, url_root)
                         with open(url_scrapped_heroes, 'w') as f2:
                             json.dump(links, f2, indent=4)
                     # Finish scraping heroes url
@@ -155,7 +157,8 @@ while running:
             else:
                 move_state(1)
         elif state["state"] == 1:
-            if state["state-data"]["index"] >= state["state-data"]["max"]:
+            max_entries = state["state-data"]["max"]
+            if state["state-data"]["index"] >= max_entries:
                 move_state(2)
             else:
                 if state["status"] < 4:
@@ -175,7 +178,7 @@ while running:
                     filename_counters = os.path.join(f_dir, "counters.html")
                     filename_scrapped = os.path.join(url_scrapped_heroes_dir, name+".json")
                     if state["status"] == 0:
-                        log("Downloading hero page for {}".format(name))
+                        display.show([title, name], "Downloading hero page", index/max_entries, index, max_entries)
                         # Save the main hero page.
                         save_url(url, filename)
                         tries = 0
@@ -183,7 +186,7 @@ while running:
                         save_state()
                         to_delay = default_delay
                     elif state["status"] == 1:
-                        log("Downloading items page for {}".format(name))
+                        display.show([title, name], "Downloading item page", index/max_entries, index, max_entries)
                         # Save the items page.
                         save_url(url_items, filename_items)
                         tries = 0
@@ -191,7 +194,7 @@ while running:
                         save_state()
                         to_delay = default_delay
                     elif state["status"] == 2:
-                        log("Downloading counters page for {}".format(name))
+                        display.show([title, name], "Downloading counter page", index/max_entries, index, max_entries)
                         # Save the counters page.
                         save_url(url_counters, filename_counters)
                         tries = 0
@@ -199,8 +202,8 @@ while running:
                         save_state()
                         to_delay = default_delay
                     elif state["status"] == 3:
-                        log("Scrapping pages for {}".format(name))
-                        # Start scraping
+                        display.show([title, name], "Scrapping pages", index/max_entries, index, max_entries)
+                        # Start scraping.
                         with open(filename, 'r') as f:
                             page = f.read()
                         with open(filename_items, 'r') as f:
@@ -216,13 +219,77 @@ while running:
                 else:
                     state["state-data"]["index"] += 1
                     state["status"] = 0
-                    save_state() 
+                    save_state()
+        elif state["state"] == 2:
+            # Scrape Items
+            if state["status"] == 0:
+                display.show([title, "Scrapping items url list"])
+                if save_url(url_dota_items, url_raw_items):
+                    with open(url_raw_items, 'r') as f:
+                        html = f.read()
+                        links = scrapper.scrap_item_links(html, url_root)
+                        with open(url_scrapped_items, 'w') as f2:
+                            json.dump(links, f2, indent=4)
+                    # Finish scraping items url
+                    state["state-data"] = {
+                        "max": len(links),
+                        "index": 0,
+                        "items": links
+                    }
+                    state["status"] = 1
+                    save_state()
+                    to_delay = default_delay
+                else:
+                    log("Failed to retrieve url")
+            else:
+                move_state(3)
+        elif state["state"] == 3:
+            max_entries = state["state-data"]["max"]
+            if state["state-data"]["index"] >= max_entries:
+                move_state(-2)
+            else:
+                if state["status"] < 2:
+                    index = state['state-data']["index"]
+                    data = state['state-data']["items"][index]
+                    name = data["id"]
+                    url = data["url"]
+                    
+                    url = state['state-data']["items"][index]["url"]
+
+                    f_dir = os.path.join(url_raw_items_dir, name)
+                    os.makedirs(f_dir, exist_ok=True)
+                    filename = os.path.join(f_dir, "item.html")
+                    filename_scrapped = os.path.join(url_scrapped_items_dir, name+".json")
+                    if state["status"] == 0:
+                        display.show([title, name], "Downloading item page", index/max_entries, index, max_entries)
+                        # Save the item page.
+                        save_url(url, filename)
+                        tries = 0
+                        state["status"] = 1
+                        save_state()
+                        to_delay = default_delay
+                    elif state["status"] == 1:
+                        display.show([title, name], "Scrapping item page", index/max_entries, index, max_entries)
+                        # Start scraping.
+                        with open(filename, 'r') as f:
+                            page = f.read()
+                        scrapped = scrapper.scrap_item_data(page)
+                        with open(filename_scrapped, 'w') as f:
+                            json.dump(scrapped, f, indent=4)
+                        tries = 0
+                        state["status"] = 2
+                        save_state()
+                else:
+                    state["state-data"]["index"] += 1
+                    state["status"] = 0
+                    save_state()
         elif state["state"] == -2:
             # finished
             running = False
-            log("Scrapping finished")
+            display.show([title, "Finished"], "-", 1)
     except Exception as e:
         print(e)
+        traceback.print_exc()
     if running and max_tries != -1 and tries >= max_tries:
         log("Max tries of a state reached. Automatically stopping")
         running = False

@@ -1,0 +1,1806 @@
+{
+    "name": "Lycan",
+    "category": [
+        "Melee",
+        "Carry",
+        "Durable",
+        "Escape",
+        "Jungler",
+        "Pusher"
+    ],
+    "popularity": "108th",
+    "win-rate": "49.87%",
+    "attributes": {
+        "primary": "strength",
+        "str": {
+            "base": 25,
+            "growth": 3.3
+        },
+        "agi": {
+            "base": 16,
+            "growth": 1.0
+        },
+        "int": {
+            "base": 17,
+            "growth": 1.55
+        }
+    },
+    "items": [
+        {
+            "name": "Power Treads",
+            "matches": 5405137,
+            "win-rate": "49.48%"
+        },
+        {
+            "name": "Vladmir's Offering",
+            "matches": 3538869,
+            "win-rate": "52.33%"
+        },
+        {
+            "name": "Black King Bar",
+            "matches": 3108841,
+            "win-rate": "54.34%"
+        },
+        {
+            "name": "Desolator",
+            "matches": 3105569,
+            "win-rate": "57.42%"
+        },
+        {
+            "name": "Necronomicon (level 3)",
+            "matches": 2484715,
+            "win-rate": "60.57%"
+        },
+        {
+            "name": "Town Portal Scroll",
+            "matches": 1766443,
+            "win-rate": "43.03%"
+        },
+        {
+            "name": "Mask of Madness",
+            "matches": 1755413,
+            "win-rate": "48.72%"
+        },
+        {
+            "name": "Assault Cuirass",
+            "matches": 1662078,
+            "win-rate": "72.15%"
+        },
+        {
+            "name": "Helm of the Dominator",
+            "matches": 1586003,
+            "win-rate": "59.45%"
+        },
+        {
+            "name": "Armlet of Mordiggian",
+            "matches": 1496926,
+            "win-rate": "50.46%"
+        },
+        {
+            "name": "Stout Shield",
+            "matches": 1357793,
+            "win-rate": "43.46%"
+        },
+        {
+            "name": "Echo Sabre",
+            "matches": 1345584,
+            "win-rate": "55.00%"
+        },
+        {
+            "name": "Boots of Travel",
+            "matches": 1141635,
+            "win-rate": "63.51%"
+        },
+        {
+            "name": "Quelling Blade",
+            "matches": 1132999,
+            "win-rate": "45.83%"
+        },
+        {
+            "name": "Skull Basher",
+            "matches": 1025749,
+            "win-rate": "50.89%"
+        },
+        {
+            "name": "Boots of Speed",
+            "matches": 775692,
+            "win-rate": "45.83%"
+        },
+        {
+            "name": "Abyssal Blade",
+            "matches": 608890,
+            "win-rate": "66.51%"
+        },
+        {
+            "name": "Iron Talon",
+            "matches": 536789,
+            "win-rate": "40.09%"
+        },
+        {
+            "name": "Dust of Appearance",
+            "matches": 470695,
+            "win-rate": "31.52%"
+        },
+        {
+            "name": "Phase Boots",
+            "matches": 466039,
+            "win-rate": "46.73%"
+        },
+        {
+            "name": "Blight Stone",
+            "matches": 463366,
+            "win-rate": "32.50%"
+        },
+        {
+            "name": "Poor Man's Shield",
+            "matches": 447885,
+            "win-rate": "41.62%"
+        },
+        {
+            "name": "Hyperstone",
+            "matches": 447442,
+            "win-rate": "56.37%"
+        },
+        {
+            "name": "Magic Wand",
+            "matches": 422602,
+            "win-rate": "50.08%"
+        },
+        {
+            "name": "Ogre Axe",
+            "matches": 375776,
+            "win-rate": "21.03%"
+        },
+        {
+            "name": "Mithril Hammer",
+            "matches": 371923,
+            "win-rate": "23.17%"
+        },
+        {
+            "name": "Monkey King Bar",
+            "matches": 354839,
+            "win-rate": "58.06%"
+        },
+        {
+            "name": "Shadow Blade",
+            "matches": 340798,
+            "win-rate": "42.88%"
+        },
+        {
+            "name": "Solar Crest",
+            "matches": 275108,
+            "win-rate": "57.15%"
+        },
+        {
+            "name": "Hand of Midas",
+            "matches": 261366,
+            "win-rate": "42.36%"
+        },
+        {
+            "name": "Blade Mail",
+            "matches": 258152,
+            "win-rate": "39.93%"
+        },
+        {
+            "name": "Sange and Yasha",
+            "matches": 241725,
+            "win-rate": "58.80%"
+        },
+        {
+            "name": "Platemail",
+            "matches": 235122,
+            "win-rate": "49.85%"
+        },
+        {
+            "name": "Morbid Mask",
+            "matches": 228827,
+            "win-rate": "37.51%"
+        },
+        {
+            "name": "Heart of Tarrasque",
+            "matches": 218806,
+            "win-rate": "72.22%"
+        },
+        {
+            "name": "Silver Edge",
+            "matches": 207542,
+            "win-rate": "62.84%"
+        },
+        {
+            "name": "Aegis of the Immortal",
+            "matches": 195620,
+            "win-rate": "97.40%"
+        },
+        {
+            "name": "Diffusal Blade",
+            "matches": 187523,
+            "win-rate": "53.66%"
+        },
+        {
+            "name": "Vanguard",
+            "matches": 172087,
+            "win-rate": "46.73%"
+        },
+        {
+            "name": "Chainmail",
+            "matches": 166826,
+            "win-rate": "34.43%"
+        },
+        {
+            "name": "Heaven's Halberd",
+            "matches": 158499,
+            "win-rate": "53.14%"
+        },
+        {
+            "name": "Linken's Sphere",
+            "matches": 144804,
+            "win-rate": "60.95%"
+        },
+        {
+            "name": "Ring of Basilius",
+            "matches": 141221,
+            "win-rate": "42.56%"
+        },
+        {
+            "name": "Necronomicon",
+            "matches": 135808,
+            "win-rate": "34.88%"
+        },
+        {
+            "name": "Tango",
+            "matches": 134328,
+            "win-rate": "34.45%"
+        },
+        {
+            "name": "Maelstrom",
+            "matches": 131822,
+            "win-rate": "42.18%"
+        },
+        {
+            "name": "Necronomicon (level 2)",
+            "matches": 131302,
+            "win-rate": "36.85%"
+        },
+        {
+            "name": "Orb of Venom",
+            "matches": 125800,
+            "win-rate": "44.00%"
+        },
+        {
+            "name": "Medallion of Courage",
+            "matches": 111085,
+            "win-rate": "40.80%"
+        },
+        {
+            "name": "Mjollnir",
+            "matches": 98357,
+            "win-rate": "63.45%"
+        },
+        {
+            "name": "Moon Shard",
+            "matches": 96994,
+            "win-rate": "78.77%"
+        },
+        {
+            "name": "Javelin",
+            "matches": 93999,
+            "win-rate": "24.12%"
+        },
+        {
+            "name": "Crystalys",
+            "matches": 91656,
+            "win-rate": "49.67%"
+        },
+        {
+            "name": "Battle Fury",
+            "matches": 88976,
+            "win-rate": "52.33%"
+        },
+        {
+            "name": "Daedalus",
+            "matches": 84946,
+            "win-rate": "66.19%"
+        },
+        {
+            "name": "Belt of Strength",
+            "matches": 84554,
+            "win-rate": "19.08%"
+        },
+        {
+            "name": "Magic Stick",
+            "matches": 82436,
+            "win-rate": "44.06%"
+        },
+        {
+            "name": "Bloodthorn",
+            "matches": 75262,
+            "win-rate": "64.37%"
+        },
+        {
+            "name": "Orchid Malevolence",
+            "matches": 70783,
+            "win-rate": "48.92%"
+        },
+        {
+            "name": "Removed Item: Diffusal Blade (level 2)",
+            "matches": 67902,
+            "win-rate": "57.15%"
+        },
+        {
+            "name": "Gem of True Sight",
+            "matches": 64050,
+            "win-rate": "79.31%"
+        },
+        {
+            "name": "Cheese",
+            "matches": 63842,
+            "win-rate": "75.74%"
+        },
+        {
+            "name": "Ring of Protection",
+            "matches": 60007,
+            "win-rate": "32.78%"
+        },
+        {
+            "name": "Iron Branch",
+            "matches": 59175,
+            "win-rate": "32.54%"
+        },
+        {
+            "name": "Gloves of Haste",
+            "matches": 58282,
+            "win-rate": "28.37%"
+        },
+        {
+            "name": "Enchanted Mango",
+            "matches": 58211,
+            "win-rate": "38.12%"
+        },
+        {
+            "name": "Demon Edge",
+            "matches": 56726,
+            "win-rate": "45.05%"
+        },
+        {
+            "name": "Satanic",
+            "matches": 56504,
+            "win-rate": "66.96%"
+        },
+        {
+            "name": "Pipe of Insight",
+            "matches": 51053,
+            "win-rate": "72.90%"
+        },
+        {
+            "name": "Reaver",
+            "matches": 49882,
+            "win-rate": "64.41%"
+        },
+        {
+            "name": "Sange",
+            "matches": 48206,
+            "win-rate": "29.71%"
+        },
+        {
+            "name": "Vitality Booster",
+            "matches": 46076,
+            "win-rate": "52.96%"
+        },
+        {
+            "name": "Observer Ward",
+            "matches": 45766,
+            "win-rate": "28.98%"
+        },
+        {
+            "name": "Headdress",
+            "matches": 45622,
+            "win-rate": "32.80%"
+        },
+        {
+            "name": "Bracer",
+            "matches": 45236,
+            "win-rate": "38.64%"
+        },
+        {
+            "name": "Ring of Aquila",
+            "matches": 42421,
+            "win-rate": "49.91%"
+        },
+        {
+            "name": "Drum of Endurance",
+            "matches": 40081,
+            "win-rate": "66.24%"
+        },
+        {
+            "name": "Divine Rapier",
+            "matches": 39230,
+            "win-rate": "86.83%"
+        },
+        {
+            "name": "Ring of Health",
+            "matches": 38689,
+            "win-rate": "33.02%"
+        },
+        {
+            "name": "Healing Salve",
+            "matches": 36236,
+            "win-rate": "39.69%"
+        },
+        {
+            "name": "Sage's Mask",
+            "matches": 35728,
+            "win-rate": "19.45%"
+        },
+        {
+            "name": "Boots of Travel",
+            "matches": 35226,
+            "win-rate": "72.94%"
+        },
+        {
+            "name": "Blink Dagger",
+            "matches": 34996,
+            "win-rate": "52.64%"
+        },
+        {
+            "name": "Shadow Amulet",
+            "matches": 34000,
+            "win-rate": "9.46%"
+        },
+        {
+            "name": "Perseverance",
+            "matches": 33763,
+            "win-rate": "31.82%"
+        },
+        {
+            "name": "Clarity",
+            "matches": 33661,
+            "win-rate": "43.94%"
+        },
+        {
+            "name": "Radiance",
+            "matches": 33491,
+            "win-rate": "65.77%"
+        },
+        {
+            "name": "Yasha",
+            "matches": 33285,
+            "win-rate": "42.33%"
+        },
+        {
+            "name": "Nullifier",
+            "matches": 30200,
+            "win-rate": "64.87%"
+        },
+        {
+            "name": "Oblivion Staff",
+            "matches": 30005,
+            "win-rate": "28.39%"
+        },
+        {
+            "name": "Eye of Skadi",
+            "matches": 29693,
+            "win-rate": "74.85%"
+        },
+        {
+            "name": "Wind Lace",
+            "matches": 29163,
+            "win-rate": "39.96%"
+        },
+        {
+            "name": "Sentry Ward",
+            "matches": 29013,
+            "win-rate": "20.50%"
+        },
+        {
+            "name": "Smoke of Deceit",
+            "matches": 27428,
+            "win-rate": "35.26%"
+        },
+        {
+            "name": "Octarine Core",
+            "matches": 26756,
+            "win-rate": "75.90%"
+        },
+        {
+            "name": "Butterfly",
+            "matches": 26133,
+            "win-rate": "74.85%"
+        },
+        {
+            "name": "Helm of Iron Will",
+            "matches": 25939,
+            "win-rate": "27.57%"
+        },
+        {
+            "name": "Tranquil Boots",
+            "matches": 25809,
+            "win-rate": "42.16%"
+        },
+        {
+            "name": "Manta Style",
+            "matches": 25121,
+            "win-rate": "68.91%"
+        },
+        {
+            "name": "Ultimate Orb",
+            "matches": 24801,
+            "win-rate": "48.80%"
+        },
+        {
+            "name": "Blades of Attack",
+            "matches": 24287,
+            "win-rate": "26.83%"
+        },
+        {
+            "name": "Staff of Wizardry",
+            "matches": 22630,
+            "win-rate": "21.91%"
+        },
+        {
+            "name": "Quarterstaff",
+            "matches": 20284,
+            "win-rate": "28.44%"
+        },
+        {
+            "name": "Soul Ring",
+            "matches": 20085,
+            "win-rate": "53.15%"
+        },
+        {
+            "name": "Observer and Sentry Wards",
+            "matches": 19897,
+            "win-rate": "24.46%"
+        },
+        {
+            "name": "Ring of Regen",
+            "matches": 18828,
+            "win-rate": "25.89%"
+        },
+        {
+            "name": "Faerie Fire",
+            "matches": 18724,
+            "win-rate": "47.09%"
+        },
+        {
+            "name": "Claymore",
+            "matches": 18193,
+            "win-rate": "24.06%"
+        },
+        {
+            "name": "Broadsword",
+            "matches": 18182,
+            "win-rate": "23.44%"
+        },
+        {
+            "name": "Blade of Alacrity",
+            "matches": 17842,
+            "win-rate": "20.37%"
+        },
+        {
+            "name": "Gauntlets of Strength",
+            "matches": 17238,
+            "win-rate": "42.70%"
+        },
+        {
+            "name": "Hood of Defiance",
+            "matches": 14538,
+            "win-rate": "52.05%"
+        },
+        {
+            "name": "Bottle",
+            "matches": 14380,
+            "win-rate": "46.75%"
+        },
+        {
+            "name": "Robe of the Magi",
+            "matches": 14027,
+            "win-rate": "15.31%"
+        },
+        {
+            "name": "Infused Raindrops",
+            "matches": 13701,
+            "win-rate": "38.51%"
+        },
+        {
+            "name": "Talisman of Evasion",
+            "matches": 11167,
+            "win-rate": "52.76%"
+        },
+        {
+            "name": "Rod of Atos",
+            "matches": 11082,
+            "win-rate": "55.87%"
+        },
+        {
+            "name": "Slippers of Agility",
+            "matches": 10833,
+            "win-rate": "32.80%"
+        },
+        {
+            "name": "Crimson Guard",
+            "matches": 10396,
+            "win-rate": "62.29%"
+        },
+        {
+            "name": "Ghost Scepter",
+            "matches": 9952,
+            "win-rate": "52.11%"
+        },
+        {
+            "name": "Sacred Relic",
+            "matches": 9112,
+            "win-rate": "72.19%"
+        },
+        {
+            "name": "Lotus Orb",
+            "matches": 8280,
+            "win-rate": "60.91%"
+        },
+        {
+            "name": "Circlet",
+            "matches": 7398,
+            "win-rate": "38.05%"
+        },
+        {
+            "name": "Wraith Band",
+            "matches": 6998,
+            "win-rate": "38.47%"
+        },
+        {
+            "name": "Shiva's Guard",
+            "matches": 6870,
+            "win-rate": "77.05%"
+        },
+        {
+            "name": "Recipe: Assault Cuirass",
+            "matches": 6794,
+            "win-rate": "41.99%"
+        },
+        {
+            "name": "Force Staff",
+            "matches": 6783,
+            "win-rate": "32.35%"
+        },
+        {
+            "name": "Arcane Boots",
+            "matches": 6315,
+            "win-rate": "51.10%"
+        },
+        {
+            "name": "Urn of Shadows",
+            "matches": 6312,
+            "win-rate": "44.61%"
+        },
+        {
+            "name": "Meteor Hammer",
+            "matches": 6210,
+            "win-rate": "69.10%"
+        },
+        {
+            "name": "Tango (Shared)",
+            "matches": 5097,
+            "win-rate": "32.55%"
+        },
+        {
+            "name": "Mekansm",
+            "matches": 4843,
+            "win-rate": "77.22%"
+        },
+        {
+            "name": "Scythe of Vyse",
+            "matches": 4760,
+            "win-rate": "65.40%"
+        },
+        {
+            "name": "Aeon Disk",
+            "matches": 4657,
+            "win-rate": "57.55%"
+        },
+        {
+            "name": "Tome of Knowledge",
+            "matches": 4490,
+            "win-rate": "35.61%"
+        },
+        {
+            "name": "Null Talisman",
+            "matches": 4455,
+            "win-rate": "34.52%"
+        },
+        {
+            "name": "Aghanim's Scepter",
+            "matches": 4383,
+            "win-rate": "64.61%"
+        },
+        {
+            "name": "Soul Booster",
+            "matches": 4062,
+            "win-rate": "68.81%"
+        },
+        {
+            "name": "Buckler",
+            "matches": 4017,
+            "win-rate": "60.82%"
+        },
+        {
+            "name": "Cloak",
+            "matches": 3908,
+            "win-rate": "35.80%"
+        },
+        {
+            "name": "Band of Elvenskin",
+            "matches": 3854,
+            "win-rate": "23.40%"
+        },
+        {
+            "name": "Point Booster",
+            "matches": 3789,
+            "win-rate": "55.37%"
+        },
+        {
+            "name": "Recipe: Black King Bar",
+            "matches": 3772,
+            "win-rate": "23.67%"
+        },
+        {
+            "name": "Eaglesong",
+            "matches": 3758,
+            "win-rate": "70.70%"
+        },
+        {
+            "name": "Void Stone",
+            "matches": 2983,
+            "win-rate": "43.58%"
+        },
+        {
+            "name": "Dagon",
+            "matches": 2974,
+            "win-rate": "45.90%"
+        },
+        {
+            "name": "Refresher Orb",
+            "matches": 2922,
+            "win-rate": "73.20%"
+        },
+        {
+            "name": "Refresher Shard",
+            "matches": 2822,
+            "win-rate": "60.38%"
+        },
+        {
+            "name": "Dagon (level 5)",
+            "matches": 2676,
+            "win-rate": "58.00%"
+        },
+        {
+            "name": "Glimmer Cape",
+            "matches": 2308,
+            "win-rate": "53.77%"
+        },
+        {
+            "name": "Eul's Scepter of Divinity",
+            "matches": 2294,
+            "win-rate": "50.78%"
+        },
+        {
+            "name": "Mystic Staff",
+            "matches": 1944,
+            "win-rate": "66.26%"
+        },
+        {
+            "name": "Dragon Lance",
+            "matches": 1809,
+            "win-rate": "47.26%"
+        },
+        {
+            "name": "Dagon (level 2)",
+            "matches": 1747,
+            "win-rate": "49.97%"
+        },
+        {
+            "name": "Guardian Greaves",
+            "matches": 1710,
+            "win-rate": "74.04%"
+        },
+        {
+            "name": "Recipe: Skull Basher",
+            "matches": 1572,
+            "win-rate": "21.06%"
+        },
+        {
+            "name": "Dagon (level 3)",
+            "matches": 1509,
+            "win-rate": "54.80%"
+        },
+        {
+            "name": "Recipe: Necronomicon",
+            "matches": 1234,
+            "win-rate": "38.57%"
+        },
+        {
+            "name": "Energy Booster",
+            "matches": 1177,
+            "win-rate": "48.34%"
+        },
+        {
+            "name": "Dagon (level 4)",
+            "matches": 1107,
+            "win-rate": "55.83%"
+        },
+        {
+            "name": "Bloodstone",
+            "matches": 1096,
+            "win-rate": "77.28%"
+        },
+        {
+            "name": "Recipe: Daedalus",
+            "matches": 1057,
+            "win-rate": "40.21%"
+        },
+        {
+            "name": "Recipe: Silver Edge",
+            "matches": 1017,
+            "win-rate": "41.30%"
+        },
+        {
+            "name": "Veil of Discord",
+            "matches": 917,
+            "win-rate": "48.85%"
+        },
+        {
+            "name": "Ethereal Blade",
+            "matches": 893,
+            "win-rate": "68.53%"
+        },
+        {
+            "name": "Spirit Vessel",
+            "matches": 856,
+            "win-rate": "56.31%"
+        },
+        {
+            "name": "Recipe: Abyssal Blade",
+            "matches": 839,
+            "win-rate": "58.40%"
+        },
+        {
+            "name": "Hurricane Pike",
+            "matches": 716,
+            "win-rate": "62.43%"
+        },
+        {
+            "name": "Mantle of Intelligence",
+            "matches": 696,
+            "win-rate": "30.32%"
+        },
+        {
+            "name": "Recipe: Linken's Sphere",
+            "matches": 694,
+            "win-rate": "31.84%"
+        },
+        {
+            "name": "Recipe: Armlet of Mordiggian",
+            "matches": 554,
+            "win-rate": "16.97%"
+        },
+        {
+            "name": "Recipe: Crystalys",
+            "matches": 538,
+            "win-rate": "32.16%"
+        },
+        {
+            "name": "Aether Lens",
+            "matches": 510,
+            "win-rate": "53.14%"
+        },
+        {
+            "name": "Recipe: Headdress",
+            "matches": 468,
+            "win-rate": "51.28%"
+        },
+        {
+            "name": "Recipe: Mjollnir",
+            "matches": 453,
+            "win-rate": "48.57%"
+        },
+        {
+            "name": "Recipe: Maelstrom",
+            "matches": 411,
+            "win-rate": "22.87%"
+        },
+        {
+            "name": "Recipe: Boots of Travel",
+            "matches": 393,
+            "win-rate": "66.92%"
+        },
+        {
+            "name": "Recipe: Radiance",
+            "matches": 391,
+            "win-rate": "46.29%"
+        },
+        {
+            "name": "Animal Courier",
+            "matches": 328,
+            "win-rate": "20.73%"
+        },
+        {
+            "name": "Kaya",
+            "matches": 322,
+            "win-rate": "57.76%"
+        },
+        {
+            "name": "Recipe: Sange",
+            "matches": 315,
+            "win-rate": "25.40%"
+        },
+        {
+            "name": "Recipe: Yasha",
+            "matches": 239,
+            "win-rate": "23.01%"
+        },
+        {
+            "name": "Recipe: Diffusal Blade",
+            "matches": 222,
+            "win-rate": "19.82%"
+        },
+        {
+            "name": "Recipe: Manta Style",
+            "matches": 174,
+            "win-rate": "41.95%"
+        },
+        {
+            "name": "Removed Item: Flying Courier",
+            "matches": 166,
+            "win-rate": "21.08%"
+        },
+        {
+            "name": "Recipe: Shiva's Guard",
+            "matches": 163,
+            "win-rate": "61.96%"
+        },
+        {
+            "name": "Recipe: Bloodthorn",
+            "matches": 121,
+            "win-rate": "38.02%"
+        },
+        {
+            "name": "Recipe: Force Staff",
+            "matches": 85,
+            "win-rate": "43.53%"
+        },
+        {
+            "name": "Recipe: Aether Lens",
+            "matches": 72,
+            "win-rate": "56.94%"
+        },
+        {
+            "name": "Recipe: Heart of Tarrasque",
+            "matches": 70,
+            "win-rate": "52.86%"
+        },
+        {
+            "name": "Recipe: Orchid Malevolence",
+            "matches": 68,
+            "win-rate": "38.24%"
+        },
+        {
+            "name": "Recipe: Buckler",
+            "matches": 50,
+            "win-rate": "28.00%"
+        },
+        {
+            "name": "Recipe: Hand of Midas",
+            "matches": 47,
+            "win-rate": "14.89%"
+        },
+        {
+            "name": "Recipe: Aeon Disk",
+            "matches": 38,
+            "win-rate": "47.37%"
+        },
+        {
+            "name": "Recipe: Bloodstone",
+            "matches": 31,
+            "win-rate": "58.06%"
+        },
+        {
+            "name": "Recipe: Urn of Shadows",
+            "matches": 25,
+            "win-rate": "76.00%"
+        },
+        {
+            "name": "Recipe: Iron Talon",
+            "matches": 21,
+            "win-rate": "42.86%"
+        },
+        {
+            "name": "Recipe: Crimson Guard",
+            "matches": 20,
+            "win-rate": "30.00%"
+        },
+        {
+            "name": "Recipe: Soul Ring",
+            "matches": 12,
+            "win-rate": "41.67%"
+        },
+        {
+            "name": "Recipe: Drum of Endurance",
+            "matches": 11,
+            "win-rate": "45.45%"
+        },
+        {
+            "name": "Recipe: Eul's Scepter of Divinity",
+            "matches": 10,
+            "win-rate": "40.00%"
+        },
+        {
+            "name": "Recipe: Battle Fury",
+            "matches": 10,
+            "win-rate": "30.00%"
+        },
+        {
+            "name": "Recipe: Dagon",
+            "matches": 10,
+            "win-rate": "40.00%"
+        },
+        {
+            "name": "Recipe: Guardian Greaves",
+            "matches": 9,
+            "win-rate": "77.78%"
+        },
+        {
+            "name": "Recipe: Null Talisman",
+            "matches": 9,
+            "win-rate": "33.33%"
+        },
+        {
+            "name": "Recipe: Pipe of Insight",
+            "matches": 8,
+            "win-rate": "62.50%"
+        },
+        {
+            "name": "Recipe: Veil of Discord",
+            "matches": 7,
+            "win-rate": "42.86%"
+        },
+        {
+            "name": "Recipe: Bracer",
+            "matches": 7,
+            "win-rate": "42.86%"
+        },
+        {
+            "name": "Recipe: Refresher Orb",
+            "matches": 6,
+            "win-rate": "66.67%"
+        },
+        {
+            "name": "Recipe: Helm of the Dominator",
+            "matches": 5,
+            "win-rate": "40.00%"
+        },
+        {
+            "name": "Recipe: Hurricane Pike",
+            "matches": 5,
+            "win-rate": "20.00%"
+        },
+        {
+            "name": "Recipe: Rod of Atos",
+            "matches": 4,
+            "win-rate": "50.00%"
+        },
+        {
+            "name": "Recipe: Spirit Vessel",
+            "matches": 4,
+            "win-rate": "50.00%"
+        },
+        {
+            "name": "Recipe: Mask of Madness",
+            "matches": 4,
+            "win-rate": "0.00%"
+        },
+        {
+            "name": "Recipe: Wraith Band",
+            "matches": 3,
+            "win-rate": "66.67%"
+        },
+        {
+            "name": "Recipe: Mekansm",
+            "matches": 2,
+            "win-rate": "100.00%"
+        },
+        {
+            "name": "Recipe: Kaya",
+            "matches": 1,
+            "win-rate": "0.00%"
+        },
+        {
+            "name": "Recipe: Magic Wand",
+            "matches": 1,
+            "win-rate": "0.00%"
+        }
+    ],
+    "matchups": [
+        {
+            "name": "Troll Warlord",
+            "disadvantages": "3.65%",
+            "win-rate": "45.52%",
+            "matches": 485412
+        },
+        {
+            "name": "Phantom Assassin",
+            "disadvantages": "3.30%",
+            "win-rate": "45.32%",
+            "matches": 1065625
+        },
+        {
+            "name": "Slardar",
+            "disadvantages": "3.14%",
+            "win-rate": "47.36%",
+            "matches": 380535
+        },
+        {
+            "name": "Sven",
+            "disadvantages": "2.97%",
+            "win-rate": "44.95%",
+            "matches": 650592
+        },
+        {
+            "name": "Naga Siren",
+            "disadvantages": "2.72%",
+            "win-rate": "52.68%",
+            "matches": 114191
+        },
+        {
+            "name": "Phantom Lancer",
+            "disadvantages": "2.53%",
+            "win-rate": "47.24%",
+            "matches": 378004
+        },
+        {
+            "name": "Necrophos",
+            "disadvantages": "2.50%",
+            "win-rate": "43.41%",
+            "matches": 586205
+        },
+        {
+            "name": "Bloodseeker",
+            "disadvantages": "2.50%",
+            "win-rate": "45.91%",
+            "matches": 821020
+        },
+        {
+            "name": "Templar Assassin",
+            "disadvantages": "2.33%",
+            "win-rate": "53.14%",
+            "matches": 257485
+        },
+        {
+            "name": "Bristleback",
+            "disadvantages": "2.21%",
+            "win-rate": "47.41%",
+            "matches": 605922
+        },
+        {
+            "name": "Chaos Knight",
+            "disadvantages": "2.12%",
+            "win-rate": "43.73%",
+            "matches": 361848
+        },
+        {
+            "name": "Timbersaw",
+            "disadvantages": "2.10%",
+            "win-rate": "52.51%",
+            "matches": 309437
+        },
+        {
+            "name": "Enchantress",
+            "disadvantages": "2.09%",
+            "win-rate": "53.05%",
+            "matches": 171786
+        },
+        {
+            "name": "Monkey King",
+            "disadvantages": "1.89%",
+            "win-rate": "52.78%",
+            "matches": 512291
+        },
+        {
+            "name": "Earthshaker",
+            "disadvantages": "1.82%",
+            "win-rate": "48.76%",
+            "matches": 649729
+        },
+        {
+            "name": "Spirit Breaker",
+            "disadvantages": "1.74%",
+            "win-rate": "44.36%",
+            "matches": 602429
+        },
+        {
+            "name": "Alchemist",
+            "disadvantages": "1.70%",
+            "win-rate": "55.30%",
+            "matches": 269951
+        },
+        {
+            "name": "Weaver",
+            "disadvantages": "1.57%",
+            "win-rate": "49.00%",
+            "matches": 448146
+        },
+        {
+            "name": "Terrorblade",
+            "disadvantages": "1.55%",
+            "win-rate": "48.74%",
+            "matches": 230652
+        },
+        {
+            "name": "Axe",
+            "disadvantages": "1.53%",
+            "win-rate": "46.42%",
+            "matches": 703069
+        },
+        {
+            "name": "Meepo",
+            "disadvantages": "1.50%",
+            "win-rate": "53.63%",
+            "matches": 153006
+        },
+        {
+            "name": "Broodmother",
+            "disadvantages": "1.39%",
+            "win-rate": "57.35%",
+            "matches": 126657
+        },
+        {
+            "name": "Ursa",
+            "disadvantages": "1.36%",
+            "win-rate": "46.22%",
+            "matches": 394741
+        },
+        {
+            "name": "Slark",
+            "disadvantages": "1.36%",
+            "win-rate": "51.33%",
+            "matches": 578403
+        },
+        {
+            "name": "Legion Commander",
+            "disadvantages": "1.34%",
+            "win-rate": "50.81%",
+            "matches": 842764
+        },
+        {
+            "name": "Lone Druid",
+            "disadvantages": "1.30%",
+            "win-rate": "59.85%",
+            "matches": 101587
+        },
+        {
+            "name": "Huskar",
+            "disadvantages": "1.24%",
+            "win-rate": "51.08%",
+            "matches": 373554
+        },
+        {
+            "name": "Nature's Prophet",
+            "disadvantages": "1.18%",
+            "win-rate": "56.36%",
+            "matches": 306773
+        },
+        {
+            "name": "Dazzle",
+            "disadvantages": "1.16%",
+            "win-rate": "49.56%",
+            "matches": 202280
+        },
+        {
+            "name": "Tiny",
+            "disadvantages": "1.07%",
+            "win-rate": "54.86%",
+            "matches": 313832
+        },
+        {
+            "name": "Enigma",
+            "disadvantages": "1.06%",
+            "win-rate": "48.53%",
+            "matches": 236713
+        },
+        {
+            "name": "Crystal Maiden",
+            "disadvantages": "1.01%",
+            "win-rate": "45.40%",
+            "matches": 539362
+        },
+        {
+            "name": "Lina",
+            "disadvantages": "0.84%",
+            "win-rate": "53.91%",
+            "matches": 433532
+        },
+        {
+            "name": "Clinkz",
+            "disadvantages": "0.79%",
+            "win-rate": "50.13%",
+            "matches": 363071
+        },
+        {
+            "name": "Windranger",
+            "disadvantages": "0.74%",
+            "win-rate": "51.81%",
+            "matches": 569969
+        },
+        {
+            "name": "Batrider",
+            "disadvantages": "0.68%",
+            "win-rate": "56.42%",
+            "matches": 107155
+        },
+        {
+            "name": "Sand King",
+            "disadvantages": "0.67%",
+            "win-rate": "51.00%",
+            "matches": 413508
+        },
+        {
+            "name": "Dark Seer",
+            "disadvantages": "0.54%",
+            "win-rate": "52.73%",
+            "matches": 114537
+        },
+        {
+            "name": "Bounty Hunter",
+            "disadvantages": "0.51%",
+            "win-rate": "50.50%",
+            "matches": 410363
+        },
+        {
+            "name": "Ember Spirit",
+            "disadvantages": "0.45%",
+            "win-rate": "53.40%",
+            "matches": 296159
+        },
+        {
+            "name": "Vengeful Spirit",
+            "disadvantages": "0.45%",
+            "win-rate": "46.24%",
+            "matches": 314362
+        },
+        {
+            "name": "Jakiro",
+            "disadvantages": "0.40%",
+            "win-rate": "47.46%",
+            "matches": 294175
+        },
+        {
+            "name": "Gyrocopter",
+            "disadvantages": "0.37%",
+            "win-rate": "52.86%",
+            "matches": 231407
+        },
+        {
+            "name": "Omniknight",
+            "disadvantages": "0.35%",
+            "win-rate": "46.23%",
+            "matches": 272222
+        },
+        {
+            "name": "Winter Wyvern",
+            "disadvantages": "0.30%",
+            "win-rate": "51.61%",
+            "matches": 176034
+        },
+        {
+            "name": "Dragon Knight",
+            "disadvantages": "0.28%",
+            "win-rate": "48.52%",
+            "matches": 339065
+        },
+        {
+            "name": "Kunkka",
+            "disadvantages": "0.27%",
+            "win-rate": "51.97%",
+            "matches": 486639
+        },
+        {
+            "name": "Lifestealer",
+            "disadvantages": "0.24%",
+            "win-rate": "53.31%",
+            "matches": 362736
+        },
+        {
+            "name": "Viper",
+            "disadvantages": "0.21%",
+            "win-rate": "49.83%",
+            "matches": 488488
+        },
+        {
+            "name": "Witch Doctor",
+            "disadvantages": "0.14%",
+            "win-rate": "49.65%",
+            "matches": 336228
+        },
+        {
+            "name": "Leshrac",
+            "disadvantages": "0.12%",
+            "win-rate": "54.34%",
+            "matches": 100254
+        },
+        {
+            "name": "Magnus",
+            "disadvantages": "0.08%",
+            "win-rate": "55.34%",
+            "matches": 296255
+        },
+        {
+            "name": "Mirana",
+            "disadvantages": "0.03%",
+            "win-rate": "50.80%",
+            "matches": 561807
+        },
+        {
+            "name": "Treant Protector",
+            "disadvantages": "0.02%",
+            "win-rate": "49.46%",
+            "matches": 189613
+        },
+        {
+            "name": "Drow Ranger",
+            "disadvantages": "-0.01%",
+            "win-rate": "49.19%",
+            "matches": 483312
+        },
+        {
+            "name": "Luna",
+            "disadvantages": "-0.04%",
+            "win-rate": "48.54%",
+            "matches": 503083
+        },
+        {
+            "name": "Razor",
+            "disadvantages": "-0.06%",
+            "win-rate": "52.97%",
+            "matches": 234872
+        },
+        {
+            "name": "Lich",
+            "disadvantages": "-0.12%",
+            "win-rate": "47.10%",
+            "matches": 265980
+        },
+        {
+            "name": "Morphling",
+            "disadvantages": "-0.16%",
+            "win-rate": "54.69%",
+            "matches": 232919
+        },
+        {
+            "name": "Beastmaster",
+            "disadvantages": "-0.21%",
+            "win-rate": "52.72%",
+            "matches": 94297
+        },
+        {
+            "name": "Medusa",
+            "disadvantages": "-0.25%",
+            "win-rate": "51.65%",
+            "matches": 301144
+        },
+        {
+            "name": "Shadow Fiend",
+            "disadvantages": "-0.26%",
+            "win-rate": "52.37%",
+            "matches": 851762
+        },
+        {
+            "name": "Riki",
+            "disadvantages": "-0.31%",
+            "win-rate": "46.81%",
+            "matches": 605230
+        },
+        {
+            "name": "Underlord",
+            "disadvantages": "-0.41%",
+            "win-rate": "45.21%",
+            "matches": 191544
+        },
+        {
+            "name": "Undying",
+            "disadvantages": "-0.44%",
+            "win-rate": "49.56%",
+            "matches": 165364
+        },
+        {
+            "name": "Faceless Void",
+            "disadvantages": "-0.45%",
+            "win-rate": "50.53%",
+            "matches": 584591
+        },
+        {
+            "name": "Ogre Magi",
+            "disadvantages": "-0.47%",
+            "win-rate": "48.80%",
+            "matches": 404866
+        },
+        {
+            "name": "Wraith King",
+            "disadvantages": "-0.53%",
+            "win-rate": "45.63%",
+            "matches": 533031
+        },
+        {
+            "name": "Death Prophet",
+            "disadvantages": "-0.53%",
+            "win-rate": "53.70%",
+            "matches": 180971
+        },
+        {
+            "name": "Keeper of the Light",
+            "disadvantages": "-0.55%",
+            "win-rate": "53.44%",
+            "matches": 226493
+        },
+        {
+            "name": "Anti-Mage",
+            "disadvantages": "-0.55%",
+            "win-rate": "51.81%",
+            "matches": 698486
+        },
+        {
+            "name": "Outworld Devourer",
+            "disadvantages": "-0.57%",
+            "win-rate": "50.77%",
+            "matches": 350262
+        },
+        {
+            "name": "Shadow Shaman",
+            "disadvantages": "-0.61%",
+            "win-rate": "47.69%",
+            "matches": 512776
+        },
+        {
+            "name": "Pangolier",
+            "disadvantages": "-0.61%",
+            "win-rate": "56.06%",
+            "matches": 146300
+        },
+        {
+            "name": "Queen of Pain",
+            "disadvantages": "-0.64%",
+            "win-rate": "55.57%",
+            "matches": 354409
+        },
+        {
+            "name": "Venomancer",
+            "disadvantages": "-0.68%",
+            "win-rate": "49.79%",
+            "matches": 367710
+        },
+        {
+            "name": "Bane",
+            "disadvantages": "-0.68%",
+            "win-rate": "54.22%",
+            "matches": 152553
+        },
+        {
+            "name": "Puck",
+            "disadvantages": "-0.68%",
+            "win-rate": "58.14%",
+            "matches": 238076
+        },
+        {
+            "name": "Sniper",
+            "disadvantages": "-0.72%",
+            "win-rate": "50.66%",
+            "matches": 1104122
+        },
+        {
+            "name": "Phoenix",
+            "disadvantages": "-0.76%",
+            "win-rate": "51.63%",
+            "matches": 152304
+        },
+        {
+            "name": "Disruptor",
+            "disadvantages": "-0.81%",
+            "win-rate": "51.49%",
+            "matches": 279943
+        },
+        {
+            "name": "Invoker",
+            "disadvantages": "-0.82%",
+            "win-rate": "52.61%",
+            "matches": 1035734
+        },
+        {
+            "name": "Brewmaster",
+            "disadvantages": "-0.83%",
+            "win-rate": "50.05%",
+            "matches": 110219
+        },
+        {
+            "name": "Tusk",
+            "disadvantages": "-0.88%",
+            "win-rate": "56.70%",
+            "matches": 251371
+        },
+        {
+            "name": "Lion",
+            "disadvantages": "-0.91%",
+            "win-rate": "53.46%",
+            "matches": 453112
+        },
+        {
+            "name": "Pugna",
+            "disadvantages": "-0.95%",
+            "win-rate": "54.59%",
+            "matches": 218717
+        },
+        {
+            "name": "Rubick",
+            "disadvantages": "-1.16%",
+            "win-rate": "54.95%",
+            "matches": 409919
+        },
+        {
+            "name": "Dark Willow",
+            "disadvantages": "-1.23%",
+            "win-rate": "52.01%",
+            "matches": 120300
+        },
+        {
+            "name": "Techies",
+            "disadvantages": "-1.37%",
+            "win-rate": "52.93%",
+            "matches": 195854
+        },
+        {
+            "name": "Elder Titan",
+            "disadvantages": "-1.42%",
+            "win-rate": "49.25%",
+            "matches": 120171
+        },
+        {
+            "name": "Chen",
+            "disadvantages": "-1.43%",
+            "win-rate": "57.88%",
+            "matches": 55810
+        },
+        {
+            "name": "Warlock",
+            "disadvantages": "-1.50%",
+            "win-rate": "50.15%",
+            "matches": 172816
+        },
+        {
+            "name": "Centaur Warrunner",
+            "disadvantages": "-1.68%",
+            "win-rate": "47.63%",
+            "matches": 234421
+        },
+        {
+            "name": "Tidehunter",
+            "disadvantages": "-1.68%",
+            "win-rate": "51.19%",
+            "matches": 246846
+        },
+        {
+            "name": "Abaddon",
+            "disadvantages": "-1.69%",
+            "win-rate": "47.91%",
+            "matches": 184018
+        },
+        {
+            "name": "Night Stalker",
+            "disadvantages": "-1.72%",
+            "win-rate": "51.10%",
+            "matches": 248088
+        },
+        {
+            "name": "Tinker",
+            "disadvantages": "-1.79%",
+            "win-rate": "53.29%",
+            "matches": 480102
+        },
+        {
+            "name": "Storm Spirit",
+            "disadvantages": "-1.86%",
+            "win-rate": "53.06%",
+            "matches": 400921
+        },
+        {
+            "name": "Io",
+            "disadvantages": "-1.97%",
+            "win-rate": "64.62%",
+            "matches": 98281
+        },
+        {
+            "name": "Nyx Assassin",
+            "disadvantages": "-2.03%",
+            "win-rate": "52.38%",
+            "matches": 327480
+        },
+        {
+            "name": "Clockwerk",
+            "disadvantages": "-2.12%",
+            "win-rate": "50.60%",
+            "matches": 278885
+        },
+        {
+            "name": "Earth Spirit",
+            "disadvantages": "-2.16%",
+            "win-rate": "59.41%",
+            "matches": 144347
+        },
+        {
+            "name": "Oracle",
+            "disadvantages": "-2.25%",
+            "win-rate": "60.34%",
+            "matches": 89091
+        },
+        {
+            "name": "Doom",
+            "disadvantages": "-2.29%",
+            "win-rate": "54.84%",
+            "matches": 221087
+        },
+        {
+            "name": "Shadow Demon",
+            "disadvantages": "-2.41%",
+            "win-rate": "56.32%",
+            "matches": 113091
+        },
+        {
+            "name": "Ancient Apparition",
+            "disadvantages": "-2.51%",
+            "win-rate": "50.60%",
+            "matches": 200223
+        },
+        {
+            "name": "Juggernaut",
+            "disadvantages": "-2.52%",
+            "win-rate": "52.50%",
+            "matches": 888586
+        },
+        {
+            "name": "Visage",
+            "disadvantages": "-2.52%",
+            "win-rate": "53.40%",
+            "matches": 76925
+        },
+        {
+            "name": "Arc Warden",
+            "disadvantages": "-2.69%",
+            "win-rate": "57.88%",
+            "matches": 106254
+        },
+        {
+            "name": "Silencer",
+            "disadvantages": "-2.89%",
+            "win-rate": "50.88%",
+            "matches": 383801
+        },
+        {
+            "name": "Skywrath Mage",
+            "disadvantages": "-2.92%",
+            "win-rate": "52.69%",
+            "matches": 306745
+        },
+        {
+            "name": "Pudge",
+            "disadvantages": "-3.28%",
+            "win-rate": "51.00%",
+            "matches": 1392089
+        },
+        {
+            "name": "Zeus",
+            "disadvantages": "-3.69%",
+            "win-rate": "47.26%",
+            "matches": 493124
+        },
+        {
+            "name": "Spectre",
+            "disadvantages": "-3.77%",
+            "win-rate": "47.58%",
+            "matches": 368562
+        }
+    ]
+}

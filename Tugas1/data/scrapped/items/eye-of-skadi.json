@@ -1,0 +1,592 @@
+{
+    "name": "Eye of Skadi",
+    "price": 5500,
+    "stats": [
+        "+ 25 All Attributes",
+        "+ 225 Health",
+        "+ 250 Mana"
+    ],
+    "passive": {
+        "name": "Cold Attack",
+        "description": " Attacks lower enemy attack speed by -45 and movement speed by -35%. Lasts 5.0 seconds when used by melee heroes, and 2.5 seconds when used by ranged."
+    },
+    "notes": "Lasts 5 seconds with melee Eye of Skadi, 2.5 seconds with ranged Eye of Skadi.",
+    "lore": "Extremely rare artifact, guarded by the azure dragons.",
+    "used-by": [
+        {
+            "name": "Slark",
+            "matches": 308424,
+            "wins": 224044
+        },
+        {
+            "name": "Medusa",
+            "matches": 175246,
+            "wins": 112123
+        },
+        {
+            "name": "Morphling",
+            "matches": 126658,
+            "wins": 85213
+        },
+        {
+            "name": "Phantom Lancer",
+            "matches": 122153,
+            "wins": 83771
+        },
+        {
+            "name": "Terrorblade",
+            "matches": 104224,
+            "wins": 66883
+        },
+        {
+            "name": "Juggernaut",
+            "matches": 95943,
+            "wins": 70870
+        },
+        {
+            "name": "Sniper",
+            "matches": 65209,
+            "wins": 43598
+        },
+        {
+            "name": "Shadow Fiend",
+            "matches": 53164,
+            "wins": 35526
+        },
+        {
+            "name": "Luna",
+            "matches": 51274,
+            "wins": 36202
+        },
+        {
+            "name": "Troll Warlord",
+            "matches": 36381,
+            "wins": 26268
+        },
+        {
+            "name": "Monkey King",
+            "matches": 29942,
+            "wins": 21860
+        },
+        {
+            "name": "Phantom Assassin",
+            "matches": 25736,
+            "wins": 19436
+        },
+        {
+            "name": "Meepo",
+            "matches": 24423,
+            "wins": 16208
+        },
+        {
+            "name": "Riki",
+            "matches": 21973,
+            "wins": 16775
+        },
+        {
+            "name": "Spectre",
+            "matches": 18089,
+            "wins": 14780
+        },
+        {
+            "name": "Anti-Mage",
+            "matches": 16922,
+            "wins": 13839
+        },
+        {
+            "name": "Lina",
+            "matches": 15450,
+            "wins": 10265
+        },
+        {
+            "name": "Gyrocopter",
+            "matches": 15116,
+            "wins": 10126
+        },
+        {
+            "name": "Chaos Knight",
+            "matches": 13995,
+            "wins": 10388
+        },
+        {
+            "name": "Bloodseeker",
+            "matches": 12562,
+            "wins": 9143
+        },
+        {
+            "name": "Mirana",
+            "matches": 12171,
+            "wins": 8717
+        },
+        {
+            "name": "Viper",
+            "matches": 10599,
+            "wins": 7327
+        },
+        {
+            "name": "Faceless Void",
+            "matches": 9812,
+            "wins": 7746
+        },
+        {
+            "name": "Ember Spirit",
+            "matches": 8721,
+            "wins": 6234
+        },
+        {
+            "name": "Weaver",
+            "matches": 8367,
+            "wins": 5640
+        },
+        {
+            "name": "Windranger",
+            "matches": 8344,
+            "wins": 5629
+        },
+        {
+            "name": "Venomancer",
+            "matches": 8003,
+            "wins": 5333
+        },
+        {
+            "name": "Drow Ranger",
+            "matches": 7430,
+            "wins": 5416
+        },
+        {
+            "name": "Clinkz",
+            "matches": 7103,
+            "wins": 5314
+        },
+        {
+            "name": "Razor",
+            "matches": 6831,
+            "wins": 4482
+        },
+        {
+            "name": "Alchemist",
+            "matches": 5836,
+            "wins": 4075
+        },
+        {
+            "name": "Queen of Pain",
+            "matches": 5446,
+            "wins": 3774
+        },
+        {
+            "name": "Bounty Hunter",
+            "matches": 3650,
+            "wins": 2585
+        },
+        {
+            "name": "Ursa",
+            "matches": 3621,
+            "wins": 2726
+        },
+        {
+            "name": "Lifestealer",
+            "matches": 3549,
+            "wins": 2579
+        },
+        {
+            "name": "Outworld Devourer",
+            "matches": 3277,
+            "wins": 2530
+        },
+        {
+            "name": "Pangolier",
+            "matches": 3033,
+            "wins": 1997
+        },
+        {
+            "name": "Arc Warden",
+            "matches": 2996,
+            "wins": 2052
+        },
+        {
+            "name": "Silencer",
+            "matches": 2878,
+            "wins": 2151
+        },
+        {
+            "name": "Dragon Knight",
+            "matches": 2745,
+            "wins": 2022
+        },
+        {
+            "name": "Vengeful Spirit",
+            "matches": 2579,
+            "wins": 1887
+        },
+        {
+            "name": "Omniknight",
+            "matches": 2548,
+            "wins": 1859
+        },
+        {
+            "name": "Nature's Prophet",
+            "matches": 2420,
+            "wins": 1503
+        },
+        {
+            "name": "Lone Druid",
+            "matches": 2248,
+            "wins": 1303
+        },
+        {
+            "name": "Crystal Maiden",
+            "matches": 2203,
+            "wins": 1544
+        },
+        {
+            "name": "Legion Commander",
+            "matches": 2180,
+            "wins": 1690
+        },
+        {
+            "name": "Wraith King",
+            "matches": 1997,
+            "wins": 1540
+        },
+        {
+            "name": "Lich",
+            "matches": 1836,
+            "wins": 1235
+        },
+        {
+            "name": "Invoker",
+            "matches": 1833,
+            "wins": 1280
+        },
+        {
+            "name": "Naga Siren",
+            "matches": 1706,
+            "wins": 1191
+        },
+        {
+            "name": "Dark Willow",
+            "matches": 1705,
+            "wins": 1095
+        },
+        {
+            "name": "Abaddon",
+            "matches": 1681,
+            "wins": 1180
+        },
+        {
+            "name": "Enchantress",
+            "matches": 1396,
+            "wins": 939
+        },
+        {
+            "name": "Templar Assassin",
+            "matches": 1331,
+            "wins": 851
+        },
+        {
+            "name": "Techies",
+            "matches": 1215,
+            "wins": 772
+        },
+        {
+            "name": "Sven",
+            "matches": 1063,
+            "wins": 777
+        },
+        {
+            "name": "Storm Spirit",
+            "matches": 956,
+            "wins": 710
+        },
+        {
+            "name": "Pudge",
+            "matches": 936,
+            "wins": 660
+        },
+        {
+            "name": "Huskar",
+            "matches": 888,
+            "wins": 625
+        },
+        {
+            "name": "Doom",
+            "matches": 821,
+            "wins": 584
+        },
+        {
+            "name": "Axe",
+            "matches": 763,
+            "wins": 545
+        },
+        {
+            "name": "Spirit Breaker",
+            "matches": 696,
+            "wins": 489
+        },
+        {
+            "name": "Nyx Assassin",
+            "matches": 622,
+            "wins": 467
+        },
+        {
+            "name": "Broodmother",
+            "matches": 599,
+            "wins": 416
+        },
+        {
+            "name": "Winter Wyvern",
+            "matches": 573,
+            "wins": 362
+        },
+        {
+            "name": "Dazzle",
+            "matches": 542,
+            "wins": 344
+        },
+        {
+            "name": "Bristleback",
+            "matches": 523,
+            "wins": 343
+        },
+        {
+            "name": "Visage",
+            "matches": 481,
+            "wins": 321
+        },
+        {
+            "name": "Necrophos",
+            "matches": 480,
+            "wins": 356
+        },
+        {
+            "name": "Night Stalker",
+            "matches": 479,
+            "wins": 348
+        },
+        {
+            "name": "Tusk",
+            "matches": 383,
+            "wins": 246
+        },
+        {
+            "name": "Puck",
+            "matches": 381,
+            "wins": 248
+        },
+        {
+            "name": "Lion",
+            "matches": 370,
+            "wins": 253
+        },
+        {
+            "name": "Ancient Apparition",
+            "matches": 358,
+            "wins": 256
+        },
+        {
+            "name": "Slardar",
+            "matches": 348,
+            "wins": 238
+        },
+        {
+            "name": "Ogre Magi",
+            "matches": 307,
+            "wins": 222
+        },
+        {
+            "name": "Io",
+            "matches": 304,
+            "wins": 208
+        },
+        {
+            "name": "Death Prophet",
+            "matches": 303,
+            "wins": 206
+        },
+        {
+            "name": "Jakiro",
+            "matches": 273,
+            "wins": 182
+        },
+        {
+            "name": "Kunkka",
+            "matches": 268,
+            "wins": 186
+        },
+        {
+            "name": "Brewmaster",
+            "matches": 266,
+            "wins": 187
+        },
+        {
+            "name": "Lycan",
+            "matches": 262,
+            "wins": 184
+        },
+        {
+            "name": "Witch Doctor",
+            "matches": 228,
+            "wins": 152
+        },
+        {
+            "name": "Zeus",
+            "matches": 221,
+            "wins": 139
+        },
+        {
+            "name": "Beastmaster",
+            "matches": 216,
+            "wins": 150
+        },
+        {
+            "name": "Dark Seer",
+            "matches": 211,
+            "wins": 133
+        },
+        {
+            "name": "Underlord",
+            "matches": 199,
+            "wins": 134
+        },
+        {
+            "name": "Sand King",
+            "matches": 185,
+            "wins": 119
+        },
+        {
+            "name": "Keeper of the Light",
+            "matches": 179,
+            "wins": 117
+        },
+        {
+            "name": "Skywrath Mage",
+            "matches": 170,
+            "wins": 120
+        },
+        {
+            "name": "Tiny",
+            "matches": 164,
+            "wins": 105
+        },
+        {
+            "name": "Tidehunter",
+            "matches": 163,
+            "wins": 114
+        },
+        {
+            "name": "Bane",
+            "matches": 160,
+            "wins": 96
+        },
+        {
+            "name": "Centaur Warrunner",
+            "matches": 151,
+            "wins": 109
+        },
+        {
+            "name": "Earthshaker",
+            "matches": 140,
+            "wins": 94
+        },
+        {
+            "name": "Shadow Demon",
+            "matches": 134,
+            "wins": 87
+        },
+        {
+            "name": "Elder Titan",
+            "matches": 131,
+            "wins": 87
+        },
+        {
+            "name": "Magnus",
+            "matches": 124,
+            "wins": 95
+        },
+        {
+            "name": "Treant Protector",
+            "matches": 119,
+            "wins": 82
+        },
+        {
+            "name": "Oracle",
+            "matches": 104,
+            "wins": 64
+        },
+        {
+            "name": "Clockwerk",
+            "matches": 101,
+            "wins": 68
+        },
+        {
+            "name": "Shadow Shaman",
+            "matches": 87,
+            "wins": 60
+        },
+        {
+            "name": "Rubick",
+            "matches": 78,
+            "wins": 51
+        },
+        {
+            "name": "Warlock",
+            "matches": 72,
+            "wins": 47
+        },
+        {
+            "name": "Phoenix",
+            "matches": 71,
+            "wins": 44
+        },
+        {
+            "name": "Leshrac",
+            "matches": 61,
+            "wins": 40
+        },
+        {
+            "name": "Disruptor",
+            "matches": 50,
+            "wins": 36
+        },
+        {
+            "name": "Chen",
+            "matches": 50,
+            "wins": 36
+        },
+        {
+            "name": "Undying",
+            "matches": 46,
+            "wins": 30
+        },
+        {
+            "name": "Timbersaw",
+            "matches": 43,
+            "wins": 30
+        },
+        {
+            "name": "Pugna",
+            "matches": 42,
+            "wins": 27
+        },
+        {
+            "name": "Batrider",
+            "matches": 30,
+            "wins": 20
+        },
+        {
+            "name": "Earth Spirit",
+            "matches": 29,
+            "wins": 20
+        },
+        {
+            "name": "Tinker",
+            "matches": 28,
+            "wins": 17
+        },
+        {
+            "name": "Enigma",
+            "matches": 20,
+            "wins": 10
+        }
+    ]
+}

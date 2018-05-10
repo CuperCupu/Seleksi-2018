@@ -1,0 +1,25 @@
+{
+    "name": "Dragon Lance",
+    "stats": [
+        "+ 12 Agility",
+        "+ 12 Strength"
+    ],
+    "passive": {
+        "name": "Dragon's Reach",
+        "description": " Increases attack range of ranged heroes by 140."
+    },
+    "notes": "Passive does not stack.",
+    "lore": "The forward charge of the wyvern host grants no quarter.",
+    "used-by": [
+        {
+            "name": "Ursa",
+            "matches": 1,
+            "wins": 1
+        },
+        {
+            "name": "Crystal Maiden",
+            "matches": 1,
+            "wins": 1
+        }
+    ]
+}
