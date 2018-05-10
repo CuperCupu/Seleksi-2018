@@ -39,7 +39,7 @@ def show(text, name="-", progress=-1, current=-1, max=-1, max_width=50):
     t_curr = "-"
     t_max = "-"
     if current > -1:
-        t_curr = str(current)
+        t_curr = str(current + 1)
     if max > -1:
         t_max = str(max)
     t_progress = t_curr + "/" + t_max
