@@ -10,26 +10,32 @@ import sys
 import display
 import traceback
 
+# Url to the website (to be scrapped from).
 url_root = "https://www.dotabuff.com/"
 url_dota_heroes = "https://www.dotabuff.com/heroes"
 url_dota_items = "https://www.dotabuff.com/items"
 
+# Filename for the saved state.
 url_scrape_state = "state.json"
 
+# Data directory.
 url_data_dir = "data/"
 
+# Path to raw files.
 url_raw_dir = os.path.join(url_data_dir, "raw/")
 url_raw_heroes = os.path.join(url_raw_dir, "heroes.html")
 url_raw_heroes_dir = os.path.join(url_raw_dir, "heroes/")
 url_raw_items = os.path.join(url_raw_dir, "items.html")
 url_raw_items_dir = os.path.join(url_raw_dir, "items/")
 
+# Path to scrapped files.
 url_scrapped_dir = os.path.join(url_data_dir, "scrapped/")
 url_scrapped_heroes = os.path.join(url_scrapped_dir, "heroes.json")
 url_scrapped_heroes_dir = os.path.join(url_scrapped_dir, "heroes/")
 url_scrapped_items = os.path.join(url_scrapped_dir, "items.json")
 url_scrapped_items_dir = os.path.join(url_scrapped_dir, "items/")
 
+# The title of the program.
 title = "Dota 2 Data Scraper"
 
 DEFAULT_STATE = {
@@ -47,6 +53,9 @@ def log(*args, **kwargs):
         print(*args, **kwargs)
 
 def load_state():
+    '''
+    Load state from state.json.
+    '''
     global url_scrape_state, state
     with open(url_scrape_state, 'r') as f:
         try:
@@ -55,22 +64,33 @@ def load_state():
             print("Error loading state, starting a new session")
 
 def save_state():
+    '''
+    Save current state to state.json.
+    '''
     global url_scrape_state, state
     with open(url_scrape_state, 'w') as f:
         json.dump(state, f, indent=4)
 
+# Loads state.json.
 if os.path.exists(url_scrape_state):
     load_state()
     log("Continuing previous session")
 else:
+    # Create a new state.json if not found.
     save_state()
 
 def save_url(url, filename):
+    '''
+    Save a url as a file.
+    '''
     cmd = "curl -s {url} --output {outfile}".format(url=url, outfile=filename)
     cmd_l = cmd.split(" ")
     return subprocess.call(cmd_l) == 0
 
 def move_state(target):
+    '''
+    Moves the state of the program to the specified state.
+    '''
     global state, tries
     state["state"] = target
     state["status"] = 0
@@ -88,15 +108,19 @@ if state["state"] == -2:
     else:
         sys.exit(0)
 
+# The number of tries (if an error occured before giving up)
 max_tries = 3
 tries = 0
 
+# The default delay value.
 default_delay = 0.2
+# The amount of time to delay the program.
 to_delay = 0
 
 while running:
     tries += 1
     if to_delay > 0:
+        # Delays the program execution.
         time.sleep(to_delay)
         to_delay = 0
     try:
@@ -157,15 +181,17 @@ while running:
                 move_state(2)
             else:
                 if state["status"] < 4:
+                    # Retrieve all information for the state
                     index = state['state-data']["index"]
                     data = state['state-data']["heroes"][index]
                     name = data["id"]
-                    url = data["url"]
                     
+                    # Get urls for all necessary pages.
                     url = state['state-data']["heroes"][index]["url"]
                     url_items = url + "/items?date=year"
                     url_counters = url + "/counters?date=year"
 
+                    # Initialize directory and get filenames
                     f_dir = os.path.join(url_raw_heroes_dir, name)
                     os.makedirs(f_dir, exist_ok=True)
                     filename = os.path.join(f_dir, "hero.html")
@@ -211,8 +237,10 @@ while running:
                         tries = 0
                         state["status"] = 4
                         save_state()
+                        # Removes raw html files.
                         shutil.rmtree(f_dir)
                 else:
+                    # Advance to the next hero.
                     state["state-data"]["index"] += 1
                     state["status"] = 0
                     save_state()
@@ -234,7 +262,9 @@ while running:
                     }
                     state["status"] = 1
                     save_state()
+                    # Adds a delay for the next step.
                     to_delay = default_delay
+                    # Removes raw html files.
                     os.unlink(url_raw_items)
                 else:
                     log("Failed to retrieve url")
@@ -246,13 +276,15 @@ while running:
                 move_state(-2)
             else:
                 if state["status"] < 2:
+                    # Retrieve all information for the state
                     index = state['state-data']["index"]
                     data = state['state-data']["items"][index]
                     name = data["id"]
-                    url = data["url"]
                     
+                    # Get urls for all necessary pages.
                     url = state['state-data']["items"][index]["url"]
 
+                    # Initialize directory and get filenames
                     f_dir = os.path.join(url_raw_items_dir, name)
                     os.makedirs(f_dir, exist_ok=True)
                     filename = os.path.join(f_dir, "item.html")
@@ -276,8 +308,10 @@ while running:
                         tries = 0
                         state["status"] = 2
                         save_state()
+                        # Removes raw html files.
                         shutil.rmtree(f_dir)
                 else:
+                    # Advance to the next item.
                     state["state-data"]["index"] += 1
                     state["status"] = 0
                     save_state()
@@ -289,6 +323,7 @@ while running:
         print(e)
         traceback.print_exc()
     if running and max_tries != -1 and tries >= max_tries:
+        # Stop the programs if it is not making any progress
         log("Max tries of a state reached. Automatically stopping")
         running = False
 
