@@ -3,8 +3,7 @@ import math
 
 def progress_bar(progress, width):
     blocks = [" ", "▏", "▎", "▍", "▌", "▋", "▊", "▉", "█"]
-    total = progress * width
-    count = total
+    count = progress * width
     text = ""
     size = len(blocks)
     top = size - 1
@@ -13,10 +12,10 @@ def progress_bar(progress, width):
             count -= 1
             text += blocks[top]
         else:
+            text += blocks[int(round(count * top))]
             count = 0
-            text += blocks[round(count * top)]
-    for _ in range(int(total), width):
-        text += " "
+    for _ in range(len(text), width):
+        text += blocks[0]
     return text
 
 displayed = False
@@ -62,7 +61,7 @@ def show(text, name="-", progress=-1, current=-1, max=-1, max_width=50):
         t_progress = "{:.2f}%".format(progress * 100)
         while len(t_progress) < 7:
             t_progress = " " + t_progress
-    offset = len(t_progress) + 2
+    offset = len(t_progress) + 1
     if offset > width:
         print(t_progress)
     else:
