@@ -52,7 +52,7 @@ def load_state():
         try:
             state = json.load(f)
         except:
-            print("Error loading state, restarting process")
+            print("Error loading state, starting a new session")
 
 def save_state():
     global url_scrape_state, state
