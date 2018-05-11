@@ -146,6 +146,7 @@ while running:
                     state["status"] = 1
                     save_state()
                     to_delay = default_delay
+                    os.unlink(url_raw_heroes)
                 else:
                     log("Failed to retrieve url")
             else:
@@ -210,6 +211,7 @@ while running:
                         tries = 0
                         state["status"] = 4
                         save_state()
+                        shutil.rmtree(f_dir)
                 else:
                     state["state-data"]["index"] += 1
                     state["status"] = 0
@@ -233,6 +235,7 @@ while running:
                     state["status"] = 1
                     save_state()
                     to_delay = default_delay
+                    os.unlink(url_raw_items)
                 else:
                     log("Failed to retrieve url")
             else:
@@ -273,6 +276,7 @@ while running:
                         tries = 0
                         state["status"] = 2
                         save_state()
+                        shutil.rmtree(f_dir)
                 else:
                     state["state-data"]["index"] += 1
                     state["status"] = 0
